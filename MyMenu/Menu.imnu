@@ -1,0 +1,54 @@
+[PageData0]
+Title=Sample Menu
+Description=This sample menu will demonstrate all of the features of MyMenu.  Double click or click the button that appears after selecting an item on the menu at right to execute the associated menu item action.
+EnableDClick=1
+Timer=15
+
+[Items0]
+Item0=Pop up a window
+Description0=This item will pop up a window on the screen.  You can specify the window caption, text, and icon in the menu.imnu file.
+Action0={WINDOW}Clicking 'OK' will execute action number two for this item.  Action two will open the C:\ drive on this computer.
+WindowCaption0=Sample pop-up window...
+WindowIcon0=64
+ActionTwo0=C:\
+
+Item1=Display a button
+Description1=Highlighting this item displays a button on the bottom of this page.  Clicking this button will execute action number one. Action one will display a pop-up, when the user clicks ok on this pop-up, the direcory in which MyMenu resides will be opened.
+Caption1=Click Here
+Action1={WINDOW}Click ok to open the directory that contains this program
+WindowCaption1=Sample pop-up window 2...
+WindowIcon1=64
+ActionTwo1=.
+
+Item2=No Action Item
+Description2=This item doesn't do anything, but it can be used to display information.
+
+
+Item3=Turn to next page
+Description3=This item will make MyMenu display page 2.
+Action3={WINDOW}I will now turn to page 2.
+WindowCaption3=Page 2
+WindowIcon=64
+ActionTwo3={PAGE}1
+
+Item4=Two Pop-up's
+Description4=This item will make MyMenu display 2 pop-up messages
+Action4={WINDOW}How are you?
+WindowCaption4=Hey there...
+WindowIcon4=64
+ActionTwo4={WINDOW}I'm good too!
+WindowCaptionTwo4=Ya...
+WindowIconTwo4=64
+
+
+[PageData1]
+Title=Sample Menu -Page 2
+Description=This is page 2 of the sample menu.
+EnableDClick=1
+
+[Items1]
+Item0=Go Back <==
+Description0=This item will turn the menu back to page 1.
+Action0={PAGE}0
+
+
